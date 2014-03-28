@@ -23,8 +23,8 @@ var elements = {
 		dot_speed: "0.5s"
 	},
 	3: {
-		image : "images/page3.png",
-		action : "tap",
+		image : "images/page1.png",
+		action : "swipeLeft_medium",
 		transition: "page_fadeOut",
 		x : "30%",
 		y : "10%",

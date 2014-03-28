@@ -32,18 +32,26 @@
     $.fn.playMShowcase = function() {
     	return this.each(function(){
 
+    		function prefixAnim(val_1,val_2){
+    			var r_val = {
+    				"-webkit-animation":val_1,
+    				"-moz-animation":val_1,
+    				"-o-animation":val_1,
+    				"animation":val_1,
+    				"-webkit-animation-fill-mode":val_2,
+    				"-moz-animation-fill-mode":val_2,
+    				"-o-animation-fill-mode":val_2,
+    				"animation-fill-mode":val_2,
+    			}
+    			return r_val;
+    		}
+
     		function animate(MSdiv){
 
     			// Resetting all animations
-    			$(MSdiv).children('.ms-view').each(function(index,element){
-    				$(this).children('.dot').css({
-    					"-webkit-animation":"none",
-		    			"-webkit-animation-fill-mode":"none"
-    				});
-    				$(this).css({
-    					"-webkit-animation":"none",
-		    			"-webkit-animation-fill-mode":"none"
-    				});
+    			$(MSdiv).children('.ms-view').each(function(index,element){    				
+    				$(this).children('.dot').css(prefixAnim("none","none"));
+    				$(this).css(prefixAnim("none","none"));
     			});
 
 	    		var timeToWait=0;
@@ -58,23 +66,18 @@
 
 	    				// Reset slider
 	    				if (index == len - 1) {
+                            console.log('reset');
 				              animate(MSdiv);
 				        }
 
 		    			// Dot animation
 		    			var dot = $(that).children('.dot');
-		    			dot.css({
-		    				"-webkit-animation":dot.attr("data-action")+" "+dot.attr("data-speed"),
-		    				"-webkit-animation-fill-mode":"forwards"
-		    			});
+		    			dot.css(prefixAnim(dot.attr("data-action")+" "+dot.attr("data-speed"),"forwards"));
 
 		    			setTimeout(function(){
 
 			    			// View animation
-			    			$(that).css({
-			    				"-webkit-animation":$(that).attr("data-transition")+" 1s",
-			    				"-webkit-animation-fill-mode":"forwards"
-			    			});
+			    			$(that).css(prefixAnim($(that).attr("data-transition")+" 1s","forwards"));
 
 		    			},300);
 
