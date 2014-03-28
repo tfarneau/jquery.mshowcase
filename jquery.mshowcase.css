@@ -1,0 +1,83 @@
+/* DOT ANIMATIONS */
+
+@-webkit-keyframes tap
+{
+	0% {opacity: 0;}
+	60% {opacity: 0.7; width:90px; height:90px;margin-top:-20px;margin-left:-20px;}
+	100% {opacity: 0; width:130px; height:130px;margin-top:-40px;margin-left:-40px;}
+}
+
+@-webkit-keyframes swipeLeft_small
+{
+	0% {margin-left: 20%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-webkit-keyframes swipeLeft_medium
+{
+	0% {margin-left: 50%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-webkit-keyframes swipeLeft_large
+{
+	0% {margin-left: 90%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-webkit-keyframes swipeRight_small
+{
+	0% {margin-left: -20%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-webkit-keyframes swipeRight_medium
+{
+	0% {margin-left: -50%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-webkit-keyframes swipeRight_large
+{
+	0% {margin-left: -90%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+/* PAGES ANIMATIONS */
+
+@-webkit-keyframes fadeOut
+{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+@-webkit-keyframes page_goLeft
+{
+	from {right: 0;}
+	to {right: 100%;}
+}
+
+@-webkit-keyframes page_goRight
+{
+	from {left: 0;}
+	to {left: 100%;}
+}
+
+/* OTHERS STYLES */
+
+.dot{
+	width:50px;
+	height:50px;
+	background-color:#FFFFFF;
+	display:bock;
+	position:absolute;
+	border-radius:1000px;
+	opacity:0;
+	z-index:99999;
+}
