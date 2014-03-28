@@ -1,4 +1,4 @@
-/* DOT ANIMATIONS */
+/* DOT ANIMATIONS webkit */
 
 @-webkit-keyframes tap
 {
@@ -49,7 +49,160 @@
 	100% {opacity:0;}
 }
 
-/* PAGES ANIMATIONS */
+/* DOT ANIMATIONS moz */
+
+@-moz-keyframes tap
+{
+	0% {opacity: 0;}
+	60% {opacity: 0.7; width:90px; height:90px;margin-top:-20px;margin-left:-20px;}
+	100% {opacity: 0; width:130px; height:130px;margin-top:-40px;margin-left:-40px;}
+}
+
+@-moz-keyframes swipeLeft_small
+{
+	0% {margin-left: 20%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-moz-keyframes swipeLeft_medium
+{
+	0% {margin-left: 50%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-moz-keyframes swipeLeft_large
+{
+	0% {margin-left: 90%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-moz-keyframes swipeRight_small
+{
+	0% {margin-left: -20%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-moz-keyframes swipeRight_medium
+{
+	0% {margin-left: -50%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-moz-keyframes swipeRight_large
+{
+	0% {margin-left: -90%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+/* DOT ANIMATIONS o */
+
+@-o-keyframes tap
+{
+	0% {opacity: 0;}
+	60% {opacity: 0.7; width:90px; height:90px;margin-top:-20px;margin-left:-20px;}
+	100% {opacity: 0; width:130px; height:130px;margin-top:-40px;margin-left:-40px;}
+}
+
+@-o-keyframes swipeLeft_small
+{
+	0% {margin-left: 20%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-o-keyframes swipeLeft_medium
+{
+	0% {margin-left: 50%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-o-keyframes swipeLeft_large
+{
+	0% {margin-left: 90%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-o-keyframes swipeRight_small
+{
+	0% {margin-left: -20%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-o-keyframes swipeRight_medium
+{
+	0% {margin-left: -50%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@-o-keyframes swipeRight_large
+{
+	0% {margin-left: -90%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+/* DOT ANIMATIONS main */
+
+@keyframes tap
+{
+	0% {opacity: 0;}
+	60% {opacity: 0.7; width:90px; height:90px;margin-top:-20px;margin-left:-20px;}
+	100% {opacity: 0; width:130px; height:130px;margin-top:-40px;margin-left:-40px;}
+}
+
+@keyframes swipeLeft_small
+{
+	0% {margin-left: 20%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@keyframes swipeLeft_medium
+{
+	0% {margin-left: 50%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@keyframes swipeLeft_large
+{
+	0% {margin-left: 90%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@keyframes swipeRight_small
+{
+	0% {margin-left: -20%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@keyframes swipeRight_medium
+{
+	0% {margin-left: -50%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+@keyframes swipeRight_large
+{
+	0% {margin-left: -90%;opacity:0;}
+	70% {margin-left: 0%;opacity:1;}
+	100% {opacity:0;}
+}
+
+/* PAGES ANIMATIONS webkit*/
 
 @-webkit-keyframes fadeOut
 {
@@ -64,6 +217,66 @@
 }
 
 @-webkit-keyframes page_goRight
+{
+	from {left: 0;}
+	to {left: 100%;}
+}
+
+/* PAGES ANIMATIONS moz*/
+
+@-moz-keyframes fadeOut
+{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+@-moz-keyframes page_goLeft
+{
+	from {right: 0;}
+	to {right: 100%;}
+}
+
+@-moz-keyframes page_goRight
+{
+	from {left: 0;}
+	to {left: 100%;}
+}
+
+/* PAGES ANIMATIONS o*/
+
+@-o-keyframes fadeOut
+{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+@-o-keyframes page_goLeft
+{
+	from {right: 0;}
+	to {right: 100%;}
+}
+
+@-o-keyframes page_goRight
+{
+	from {left: 0;}
+	to {left: 100%;}
+}
+
+/* PAGES ANIMATIONS main*/
+
+@keyframes fadeOut
+{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+@keyframes page_goLeft
+{
+	from {right: 0;}
+	to {right: 100%;}
+}
+
+@keyframes page_goRight
 {
 	from {left: 0;}
 	to {left: 100%;}
